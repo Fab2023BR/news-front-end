@@ -13,7 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+#root {
+  width: 100%;
+}
+x a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
