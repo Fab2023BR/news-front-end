@@ -1,0 +1,32 @@
+.news {
+  padding: 32px 16px 24px;
+  background-color: #f5f6f7;
+}
+
+.news__title {
+  margin: 0;
+  font-family: Roboto Slab;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0;
+  color: #1a1b22;
+  margin-bottom: 58px;
+}
+
+.news__read-more {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #1a1b22;
+  width: 100%;
+  border-radius: 80px;
+  border: none;
+}
+
+.news__read-more:hover {
+  background-color: #e8e8e8;
+}

@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px 22px;
+  gap: 38px;
+}
+
+.footer__wapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__list {
+  height: 74px;
+}
+
+.footer__list-item {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #1a1b22;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.footer__container {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__copywright {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #b6bcbf;
+}
