@@ -39,6 +39,18 @@ const Header = () => {
             </ul>
           </nav>
         ) : null}
+        <nav className="header__nav header__nav_desktop">
+          <ul className="header__list">
+            <li className="header__list-item">
+              <a href="/" className="header__link">
+                Home
+              </a>
+            </li>
+            <li className="header__list-item">
+              <button className="header__signin-button">Entrar</button>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div className="header__hero">
         <h1 className="header__hero-title">O que está acontecendo no mundo?</h1>

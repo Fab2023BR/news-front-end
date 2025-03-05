@@ -6,6 +6,7 @@ import News from "./components/news";
 import About from "./components/about";
 import Footer from "./components/footer";
 import "./App.css";
+import SavedNews from "./components/savedNews";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           component={() => (
             <>
               <HeaderNewsSaved />
+              <SavedNews />
+              <Footer />
             </>
           )}
         />

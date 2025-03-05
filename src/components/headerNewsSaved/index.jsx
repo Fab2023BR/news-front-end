@@ -8,20 +8,28 @@ const HeaderNewsSaved = () => {
 
   return (
     <header className="header-news-saved">
-      <h2 className="header-news-saved__title">NewsExplorer</h2>
-      {!showMenu ? (
-        <GiHamburgerMenu
-          color="black"
-          className={`header-news-saved__menu-button`}
-          onClick={() => setShowMenu(true)}
-        />
-      ) : (
-        <IoClose
-          color="white"
-          className={`header-news-saved__menu-button header-news-saved__menu-button_close`}
-          onClick={() => setShowMenu(false)}
-        />
-      )}
+      <div className="header-news-saved__wrapper">
+        <h2
+          className={`header-news-saved__title ${
+            showMenu ? "header-news-saved__title_menu" : ""
+          }`}
+        >
+          NewsExplorer
+        </h2>
+        {!showMenu ? (
+          <GiHamburgerMenu
+            color="black"
+            className={`header-news-saved__menu-button`}
+            onClick={() => setShowMenu(true)}
+          />
+        ) : (
+          <IoClose
+            color="white"
+            className={`header-news-saved__menu-button header-news-saved__menu-button_close`}
+            onClick={() => setShowMenu(false)}
+          />
+        )}
+      </div>
       {showMenu ? (
         <nav className="header-news-saved__nav">
           <ul className="header-news-saved__list">

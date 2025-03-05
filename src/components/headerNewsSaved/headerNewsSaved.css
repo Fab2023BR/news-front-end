@@ -1,9 +1,19 @@
 .header-news-saved {
   width: 100%;
+}
+
+.header-news-saved__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #d1d2d6;
+  z-index: 1;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 16px;
-  border-bottom: 2px solid #2e2e2e;
   box-sizing: border-box;
 }
 
@@ -15,6 +25,11 @@
   letter-spacing: 0;
   color: #000;
   margin: 0;
+}
+
+.header-news-saved__title_menu {
+  color: #ffffff;
+  z-index: 1;
 }
 
 .header-news-saved__menu-button {
