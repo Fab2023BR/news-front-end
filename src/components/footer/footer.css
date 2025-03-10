@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 20px 16px 22px;
   gap: 38px;
+  max-width: 1440px;
 }
 
 .footer__wapper {
@@ -42,4 +43,36 @@
   line-height: 22px;
   letter-spacing: 0;
   color: #b6bcbf;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 24px 40px 18px;
+    gap: 62px;
+  }
+
+  .footer__wapper {
+    gap: 40px;
+    max-width: 271px;
+  }
+
+  .footer__list {
+    display: flex;
+    gap: 40px;
+    height: 24px;
+  }
+
+  .footer__copywright {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    justify-content: space-between;
+    padding: 32px 104px 26px;
+  }
 }
