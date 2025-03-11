@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+
 import "./header.css";
 
-const Header = () => {
+const Header = ({ setShowLoginModal }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -34,7 +35,12 @@ const Header = () => {
                 </a>
               </li>
               <li className="header__list-item">
-                <button className="header__signin-button">Entrar</button>
+                <button
+                  className="header__signin-button"
+                  onClick={() => setShowLoginModal(true)}
+                >
+                  Entrar
+                </button>
               </li>
             </ul>
           </nav>
@@ -47,7 +53,12 @@ const Header = () => {
               </a>
             </li>
             <li className="header__list-item">
-              <button className="header__signin-button">Entrar</button>
+              <button
+                className="header__signin-button"
+                onClick={() => setShowLoginModal(true)}
+              >
+                Entrar
+              </button>
             </li>
           </ul>
         </nav>

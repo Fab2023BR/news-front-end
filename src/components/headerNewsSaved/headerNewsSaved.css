@@ -78,6 +78,10 @@
   text-decoration: none;
 }
 
+.header-news-saved__link:hover {
+  color: #000;
+}
+
 .header-news-saved__signin-button {
   font-family: "Roboto";
   font-weight: 500;
@@ -86,7 +90,7 @@
   letter-spacing: 0;
   text-align: center;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #1a1b22;
   border-radius: 100px;
   width: 100%;
   background-color: transparent;
@@ -175,7 +179,7 @@
     font-size: 16px;
     padding: 8px 12px;
     color: #000;
-    border: 1px solid #d1d2d6;
+    border: 1px solid #1a1b22;
   }
 
   .header-news-saved__hero {
