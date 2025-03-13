@@ -14,13 +14,17 @@
 }
 
 .loginModal__close-button {
+  position: absolute;
   width: 24px;
   height: 24px;
-  align-self: flex-end;
   z-index: 10;
+  color: #fff;
+  top: -24px;
+  right: 0;
 }
 
 .loginModal__wrapper-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +33,7 @@
   background-color: #fff;
   border-radius: 16px;
   height: 100%;
+  margin-top: 36px;
 }
 
 .loginModal__title {
@@ -41,7 +46,7 @@
   margin-bottom: 18px;
   margin-top: 0;
   align-self: flex-start;
-  padding: 16px 145px 18px 17px;
+  padding: 16px 145px 18px 0;
 }
 
 .loginModal__container-form {
@@ -116,7 +121,49 @@
 }
 
 @media (min-width: 768px) {
+  .loginModal {
+    justify-content: center;
+    align-items: center;
+  }
+  .loginModal__wrapper {
+    width: 430px;
+    height: 380px;
+  }
+
+  .loginModal__close-button {
+    position: absolute;
+  }
+
+  .loginModal__wrapper-form {
+    width: 430px;
+    height: 380px;
+    padding: 16px;
+    margin-top: 0;
+  }
+
+  .loginModal__title {
+    line-height: 28.13px;
+    padding: 34px 315px 22px 0;
+  }
+
+  .loginModal__form-submit {
+    width: 358px;
+    height: 64px;
+  }
+
+  .loginModal__button-redirect button {
+    color: #000000;
+  }
 }
 
 @media (min-width: 1024px) {
+  .loginModal__form-input {
+    font-size: 12px;
+  }
+
+  .loginModal__close-button {
+    width: 40px;
+    height: 40px;
+    top: -40px;
+  }
 }

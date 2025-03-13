@@ -4,14 +4,14 @@ import "./loginModal.css";
 const LoginModal = ({ setShowLoginModal, setShowRegisterModal }) => {
   return (
     <div className="loginModal">
-      <IoClose
-        className="loginModal__close-button"
-        onClick={() => setShowLoginModal(false)}
-      />
       <div className="loginModal__wrapper">
         <div className="loginModal__wrapper-form">
-          <p className="loginModal__title">Entrar</p>
           <form className="loginModal__form">
+            <IoClose
+              className="loginModal__close-button"
+              onClick={() => setShowLoginModal(false)}
+            />
+            <p className="loginModal__title">Entrar</p>
             <div className="loginModal__container-form">
               <label className="loginModal__form-label">
                 Email

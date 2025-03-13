@@ -37,7 +37,10 @@ const Header = ({ setShowLoginModal }) => {
               <li className="header__list-item">
                 <button
                   className="header__signin-button"
-                  onClick={() => setShowLoginModal(true)}
+                  onClick={() => {
+                    setShowLoginModal(true);
+                    setShowMenu(false);
+                  }}
                 >
                   Entrar
                 </button>
