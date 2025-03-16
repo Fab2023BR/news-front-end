@@ -4,11 +4,11 @@ import "./registerModal.css";
 const RegisterModal = ({ setShowRegisterModal, setShowLoginModal }) => {
   return (
     <div className="registerModal">
-      <IoClose
-        className="registerModal__close-button"
-        onClick={() => setShowRegisterModal(false)}
-      />
       <div className="registerModal__wrapper-form">
+        <IoClose
+          className="registerModal__close-button"
+          onClick={() => setShowRegisterModal(false)}
+        />
         <p className="registerModal__title">Inscrever-se</p>
         <form className="registerModal__form">
           <label className="registerModal__form-label">
