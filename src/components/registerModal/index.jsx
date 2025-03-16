@@ -12,18 +12,21 @@ const RegisterModal = ({ setShowRegisterModal, setShowLoginModal }) => {
         <p className="registerModal__title">Inscrever-se</p>
         <form className="registerModal__form">
           <label className="registerModal__form-label">
+            Email
             <input
               className="registerModal__form-input"
               placeholder="Insira e-mail"
             />
           </label>
           <label className="registerModal__form-label">
+            Senha
             <input
               className="registerModal__form-input"
               placeholder="Insira a senha"
             />
           </label>
           <label className="registerModal__form-label">
+            Nome de usuário
             <input
               className="registerModal__form-input"
               placeholder="Insira seu nome de usuário"
