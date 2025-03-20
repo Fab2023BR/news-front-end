@@ -1,7 +1,12 @@
 import { IoClose } from "react-icons/io5";
 import "./registerModal.css";
 
-const RegisterModal = ({ setShowRegisterModal, setShowLoginModal }) => {
+const RegisterModal = ({ setShowRegisterModal, setShowSuccessModal }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(setShowSuccessModal);
+    setShowSuccessModal(true);
+  };
   return (
     <div className="registerModal">
       <div className="registerModal__wrapper-form">
@@ -10,7 +15,7 @@ const RegisterModal = ({ setShowRegisterModal, setShowLoginModal }) => {
           onClick={() => setShowRegisterModal(false)}
         />
         <p className="registerModal__title">Inscrever-se</p>
-        <form className="registerModal__form">
+        <form className="registerModal__form" onSubmit={handleSubmit}>
           <label className="registerModal__form-label">
             Email
             <input
@@ -40,8 +45,8 @@ const RegisterModal = ({ setShowRegisterModal, setShowLoginModal }) => {
             <button
               type="button"
               onClick={() => {
-                setShowRegisterModal(true);
-                setShowLoginModal(false);
+                setShowRegisterModal(false);
+                setShowSuccessModal(true);
               }}
             >
               Entre

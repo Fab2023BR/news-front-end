@@ -15,7 +15,7 @@ import SuccessModal from "./components/successModal";
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showRegisterModal, setShowRegisterModal] = useState(false);
-  const [showSuccessModal, setShowSuccessModal] = useState(true);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   return (
     <div className="page">
@@ -51,15 +51,13 @@ function App() {
         <RegisterModal
           setShowRegisterModal={setShowRegisterModal}
           setShowLoginModal={setShowLoginModal}
+          setShowSuccessModal={setShowSuccessModal}
         />
       ) : null}
 
-      {/* {showSuccessModal ? (
-        <SuccessModal
-          setShowSuccessModal={setShowSuccessModal}
-          setShowLoginModal={setShowLoginModal}
-        />
-      ) : null} */}
+      {showSuccessModal ? (
+        <SuccessModal setShowLoginModal={setShowLoginModal} />
+      ) : null}
     </div>
   );
 }
